@@ -8,6 +8,7 @@
 <meta property="og:title" content="Vicentrum Studio — Graphic Design">
 <meta property="og:description" content="Vicentrum Studio — studio desain grafis Indonesia. Identitas visual, logo, poster &amp; print. Bold identity, digambar tangan, dibuat presisi.">
 <meta property="og:url" content="https://vicentrum.my.id/">
+<meta property="og:image" content="https://vicentrum.my.id/images/paperclip-sticker.jpg">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
 <script type="application/ld+json">
@@ -132,10 +133,10 @@ p{font-size:clamp(14px,2.2vw,17px);line-height:1.55}
     <div class="strip"><small>Selected projects.</small><b>Works</b></div>
     <div class="art" style="padding:clamp(10px,2.4vw,16px)">
       <div class="grid rv">
-        <div class="t t1"><div class="sun" style="width:70%;aspect-ratio:1;left:15%;top:8%"></div><span class="cap">Ashen Coffee</span></div>
-        <div class="t t2 sw"><span class="cap">Signal Fest</span></div>
-        <div class="t t3"><svg viewBox="0 0 100 150" style="position:absolute;left:25%;top:6%;width:50%;color:var(--red)"><use href="#hd"/></svg><span class="cap">Gravewood</span></div>
-        <div class="t t4"><div style="position:absolute;inset:0;background:repeating-linear-gradient(60deg,#0b080855 0 1px,transparent 1px 6px)"></div><span class="cap">Halcyon Records</span></div>
+        <div class="t t1"><div class="sun" style="width:70%;aspect-ratio:1;left:15%;top:8%"></div><span class="cap">Paperclip Sticker</span></div>
+        <div class="t t2 sw"><span class="cap">Saga xyz</span></div>
+        <div class="t t3"><svg viewBox="0 0 100 150" style="position:absolute;left:25%;top:6%;width:50%;color:var(--red)"><use href="#hd"/></svg><span class="cap">Outseta</span></div>
+        <div class="t t4"><div style="position:absolute;inset:0;background:repeating-linear-gradient(60deg,#0b080855 0 1px,transparent 1px 6px)"></div><span class="cap">GainzAlgo Graphic</span></div>
       </div>
     </div>
   </section>
@@ -277,9 +278,9 @@ p{font-size:clamp(17px,1.4vw,21px)}
 </style>
 <script>
 (function(){
-var KEY='vicentrum_works',tiles=[].slice.call(document.querySelectorAll('.grid .t')),
+var KEY='vicentrum_works_v2',tiles=[].slice.call(document.querySelectorAll('.grid .t')),
 orig=tiles.map(function(t){return t.querySelector('.cap').textContent}),data=null;
-function def(){return orig.map(function(t){return{title:t,image:''}})}
+function def(){var imgs=['images/paperclip-sticker.jpg','images/saga-xyz.jpg','images/outseta.jpg','images/gainzalgo-graphic.jpg'];return orig.map(function(t,i){return{title:t,image:imgs[i]||''}})}
 try{data=JSON.parse(localStorage.getItem(KEY)||'null')}catch(e){}
 if(!data||data.length!==4)data=def();
 function apply(){
